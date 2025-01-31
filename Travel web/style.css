@@ -1,0 +1,110 @@
+* {
+  font-family: "Prosto One", sans-serif;
+}
+nav{
+  background-color: #B3CAAA;
+}
+.navbar-brand {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  background: linear-gradient(
+    90deg,
+    rgb(48, 87, 21) 0%,
+    rgb(20, 150, 29) 100%
+  );
+  background-clip: text;
+  color: transparent; /* Fallback for other browsers */
+  font-size: 48px; /* Adjust size as needed */
+  font-weight: bold; /* Make it bold for better visibility */
+}
+
+.hero1 {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background-clip: text;
+  color: transparent; /* Fallback for other browsers */
+  font-size: 48px; /* Adjust size as needed */
+  font-weight: bold; /* Make it bold for better visibility */
+}
+.translucent-bg {
+  background-image: url("https://images.pexels.com/photos/2343011/pexels-photo-2343011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover; /* make image cover the div */
+  background-position: center;
+  background-repeat: no-repeat; /* prevent image from repeating */
+  z-index: 0;
+
+  /* making the translucent overlay pseudo-element*/
+  position: relative;
+  /*seting the positioning context for any absolutely positioned child elements (the ::before pseudo-element)*/
+}
+
+/*translucent overlay pseudo-element*/
+.translucent-bg::before {
+  content: ""; /*this creates the pseudo-element*/
+  position: absolute;
+  top: 0; /*stretching the pseudo-element to fit*/
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(
+    144,
+    173,
+    127,
+    0.6
+  ); /* White background with 50% opacity */
+  z-index: 1; /* Ensure it sits above the background image */
+}
+
+.translucent-bg > * {
+  position: relative; /*make the DIRECT CHILD ELEMENTS sit above the translucent overlay*/
+  z-index: 2; /*ensure TEXT is above the translucent layer */
+}
+.hero-section {
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  color: rgb(208, 255, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+}
+
+h2 {
+  text-decoration: underline;
+}
+.contact {
+  border: solid;
+  border-color: rgb(142, 144, 136);
+  border-radius: 30px;
+  background-color: rgba(144, 173, 127, 0.8);
+}
+
+footer {
+  background-color: #f8f9fa00;
+  padding: 20px 0;
+  border-radius: 30px;
+}
+footer .social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #000;
+}

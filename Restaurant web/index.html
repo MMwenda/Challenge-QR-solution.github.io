@@ -1,0 +1,145 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>The Executive Restaurant</title>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">  
+  <link rel="stylesheet" href="style.css"> <!--linking the css file-->	  
+
+  <!--Font-->  
+  <link rel="preconnect" href="https://fonts.googleapis.com">  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Honk&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>  
+<body>  
+
+  <nav class="navbar navbar-expand-lg">  
+    <a class="navbar-brand text-warning" href="#">The Executive.</a>  
+    <!--toggler button-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+      <span class="navbar-toggler-icon"></span>  
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarNav">  
+      <ul class="navbar-nav ms-auto">  
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li> 
+        <!--menu dropdown--> 
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Caprese Salad</a></li>
+            <li><a class="dropdown-item" href="#">Grilled Salmon</a></li>
+            <li><a class="dropdown-item" href="#">Chocolate Fondue</a></li>
+          </ul>
+        </div>
+        <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>  
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>  
+      </ul>  
+    </div>  
+  </nav>  
+
+  <div class="hero">  
+    <div>  
+      <h1 class="text-warning">Welcome to The Executive</h1>  
+      <p style="color: rgb(44, 41, 41); font-size: 20px;">Experience the taste of authentic cuisine</p>  
+      <button class="btn btn-outline-warning">Book a Table</button>  
+    </div>  
+  </div>  
+
+  <!--menu Section-->
+  <div class="container my-5">  
+    <h2 class="text-center mb-4">Our Menu</h2>  
+    <div class="row">  
+      <div class="col-md-4 menu-item mb-4">  
+        <!--1-->
+        <div class="card h-100">  
+          <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Caprese Salad">  
+          <div class="card-body">  
+            <h5 class="card-title">Caprese Salad</h5>  
+            <p class="card-text">Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p>  
+            <p class="card-text">$12.99</p>  
+          </div>  
+        </div>  
+      </div>  
+      <div class="col-md-4 menu-item mb-4">  
+
+        <!--2-->
+        <div class="card h-100">  
+          <img src="https://images.pexels.com/photos/3763847/pexels-photo-3763847.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Grilled Salmon">  
+          <div class="card-body">  
+            <h5 class="card-title">Grilled Salmon</h5>  
+            <p class="card-text">Perfectly grilled salmon with a side of roasted vegetables.</p>  
+            <p class="card-text">$18.99</p>  
+          </div>  
+        </div>  
+      </div>  
+      <div class="col-md-4 menu-item mb-4">  
+
+        <!--3-->
+        <div class="card h-100">  
+          <img src="https://images.pexels.com/photos/219162/pexels-photo-219162.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Chocolate Fondue">  
+          <div class="card-body">  
+            <h5 class="card-title">Chocolate Fondue</h5>  
+            <p class="card-text">Assorted fruits and marshmallows served with rich chocolate fondue.</p>  
+            <p class="card-text">$8.99</p>  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+
+
+  <!--About Us Section-->
+  <div class="container my-5">  
+    <div class="row">  
+      <div class="col-md-6">  
+        <img src="https://images.pexels.com/photos/14885927/pexels-photo-14885927.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Restaurant">  
+      </div>  
+      <div id="aboutus" class="col-md-6">  
+        <h2>About Us</h2>  
+        <p style="font-size: 27px;">At The Executive, we pride ourselves on serving the finest cuisine made from fresh ingredients. Our family-owned restaurant offers a warm and inviting atmosphere for you to enjoy your meals. We believe that food is more than just nourishment, it's an experience.</p>  
+      </div>  
+    </div>  
+  </div>  
+
+  <!--Contact Us Section-->
+  <div id="contact"  class="container contact my-5">  
+    <h2 class="text-center mb-4">Contact Us</h2>  
+    <form>  
+      <div class="form-group">  
+        <label for="name">Name</label>  
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">  
+      </div>  
+      <div class="form-group">  
+        <label for="email">Email</label>  
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">  
+      </div>  
+      <div class="form-group">  
+        <label for="message">Message</label>  
+        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>  
+      </div>  
+      <button type="submit" class="btn btn-outline-warning mt-3">Submit</button>  
+    </form>
+    <br>  
+  </div>  
+
+  <footer class="footer text-center">
+    <div style="font-size: 20px;">  
+      <i class="fa-brands fa-instagram"></i>  
+      <i class="fa-brands fa-x-twitter"></i>  
+      <i class="fa-brands fa-linkedin"></i>  
+    </div>  
+    <p>&copy; 2025 The Executive Restaurant. All Rights Reserved.</p>  
+  </footer>  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>  
+  <script src="https://kit.fontawesome.com/27ab9d13e4.js" crossorigin="anonymous"></script>  
+</body>  
+</html>
