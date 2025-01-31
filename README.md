@@ -1,4 +1,4 @@
-# Project Repository
+# CHECKPOINT
 This repository contains two separate projects:
 1. **Travel Agency Website**
 2. **Restaurant Website**
